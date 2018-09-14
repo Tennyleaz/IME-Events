@@ -1,5 +1,9 @@
 # IME-Events
-An example of TextCompositionManager when input with CJK IME.
+An example of `System.Windows.Input.TextCompositionManager` when input with CJK IME.
+
+Class `TextCompositionManager` has three events: `PreviewTextInputEvent`, `PreviewTextInputStartEvent`, and `PreviewTextInputUpdateEvent` (have bubbling/routed variants)
+
+I'm testing four different languages/IMEs, and found that Korean IME has different behaviors than Chinese/Japanese IMEs.
 
 # 注音輸入法 (Microsoft Bopomofo)
 1. Pressed <kbd>S</kbd>, text is now `ㄋ`
