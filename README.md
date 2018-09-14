@@ -89,7 +89,7 @@ PreviewTextInputUpdate -> PreviewTextInput -> TextChanged
 
 1. Pressed <kbd>G</kbd>, text is now `ㅎ`
 
-PreviewTextInputStart -> PreviewTextInputUpdate -> TextChanged
+PreviewTextInputStart -> TextChanged
 
 2. Pressed <kbd>K</kbd>, text is now `하`
 
@@ -101,7 +101,7 @@ PreviewTextInputUpdate -> TextChanged
 
 4. Pressed <kbd>R</kbd>, text is now `한ㄱ`
 
-PreviewTextInputUpdate -> TextChanged
+PreviewTextInput -> PreviewTextInputStart -> TextChanged
 
 5. Pressed <kbd>M</kbd>, text is now `한그`
 
@@ -113,4 +113,4 @@ PreviewTextInputUpdate -> TextChanged
 
 7. Pressed <kbd>Enter</kbd>, text is now `한글`
 
-PreviewTextInputUpdate -> PreviewTextInput -> TextChanged
+PreviewTextInput -> PreviewTextInputStart -> PreviewTextInput
